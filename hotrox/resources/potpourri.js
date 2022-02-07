@@ -10,6 +10,10 @@ function RollSixSidedDice() {
     document.getElementById("dice6").value = Math.floor(Math.random()*6) + 1;
 }
 
+function myThing() {
+    document.getElementById("dice1").value = 69;
+}
+
 function DoCalculations() {
     x = document.getElementById("xID").value;
     y = document.getElementById("yID").value;

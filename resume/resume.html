@@ -1,14 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<!--
-    Page Author:    Jonathan Pederzani
-    Resume Author:  Lewis University 
-    Description:    An online resume that displays my ability to program static html webpages
--->
+    <html lang="en">
+    <!--
+        Page Author:    Jonathan Pederzani
+        Resume Author:  Lewis University 
+        Description:    An online resume that displays my ability to program static html webpages
+    -->
     <head>
         <meta charset="UTF-8">
         <title>Web Resume of Jonathan Pederzani</title>
-        <link rel="stylesheet" href="resume.css">
+        <style>
+            body {
+            background-color: azure;
+            padding-left: 15%;
+            padding-right: 15%;   
+            }
+
+            .contact {
+            width:fit-content;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+            .edu {
+            width:fit-content;        
+            text-align: left;
+            padding-left: 40px;       
+            }
+
+            h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-variant: small-caps;
+            text-align: center;
+            }
+
+            h3 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-variant: small-caps;
+            font-style: italic;
+            }
+
+            h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-variant: small-caps;
+            border-bottom: 1px solid black;
+            }
+
+            p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: left;
+            }
+
+            div  {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            th  {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-variant: small-caps;  
+            }
+
+            .section {
+            line-height: 100%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: left;
+            padding-left: 20px; 
+            }
+
+        </style>
     </head>
     <body>
         <h1>Jonathan D. Pederzani</h1>
@@ -16,29 +78,27 @@
         <div>
             <table class="contact">
                 <td><a href=""> My LinkedIn </a></td>
-                <td></td>
-                <td><li>555-555-5555</li></td>
-                <td></td>
-                <td><li><a href="mailto:Jonathan.Pederzani@student.Judsonu.edu">Jonathan.Pederzani@Student.Judsonu.edu</a></li></td>
-                <td></td>
-                <td><li>Elgin, IL</li></td>
+                <td><li></li></td>
+                <td>(555) 555-5555</td>
+                <td><li></li></td>
+                <td><a href="mailto:Jonathan.Pederzani@student.Judsonu.edu">Jonathan.Pederzani@Student.Judsonu.edu</a></td>
+                <td><li></li></td>
+                <td>Elgin, IL</td>
             </table>
         </div>
-       
         <hr>
-
-            <h2>Highlights of Qualifications</h2>
-            <div class="section">            
-                <ul>
+        <h2>Highlights of Qualifications</h2>
+        <div class="section">            
+            <ul>
                 <li>Conducted two research projects and one juried research presentation</li>
                 <li>Completion of 250+ hours as a help desk intern</li>
                 <li>Conflict resolution and problem-solving skills gained from 3+ years of customer service work</li>
                 <li>Solid organizational and project management skills; ability to resolve issues through completion</li>
                 <li>Leadership, interpersonal communication and collaboration skills gained from serving four years as
                     a student-athlete and holding two officer roles in campus organizations</li>
-                </ul>
-            </div>
-            <h2>Summary of Technical Qualifications</h2>
+            </ul>
+        </div>
+    <h2>Summary of Technical Qualifications</h2>
         <div class="section">
             <h3>Certifications:</h3>
                 <ul><li>CISSP, CISM, MCSA, MCTS, MCSE, CCNA, Network+, Security+, A+, VCP, CompTIA, Healthcare IT Technician, ACSP, CEH, GIAC</li></ul>
@@ -57,143 +117,144 @@
                 <ul><li>PC, Mac, Cloud, Virtualization, NAS, SAN, Clustered Computing, Backup, Disaster Recovery, Networking Appliances, 
                         Enterprise Mobile Device Support</li></ul>
         </div>
-            <h2>EDUCATION</h2>
-            <div class="section">
-                <table class="edu">
+    <h2>EDUCATION</h2>
+        <div class="section">
+            <table class="edu">
                 <td><b>Bachelor of Science in Computer Science</b></td>
                 <td>Expected:  May 20XX</td>
-            <tr>
-                <td>Lewis University, Romeoville, IL</td>
-                <td>GPA: 3.8/4.0</td>
-            </tr>
-            <tr>
-                <td>Minors: Mathematics and Business administration</td> 
-            </tr>
+                <tr>
+                    <td>Lewis University, Romeoville, IL</td>
+                    <td>GPA: 3.8/4.0</td>
+                </tr>
+                <tr>
+                    <td>Minors: Mathematics and Business administration</td> 
+                </tr>
             </table>
-            </div>
-            <h2>PROJECTS</h2>
-            <div class="section">
-                <b>Got It (Sports App):</b> Software Systems Capstone Project at Lewis University</ul>
-                    <ul><li>Developed a mobile application with database for inventorying items; used NFC tags to label each
-                        item, implemented RFID capability, and built a user-friendly GUI for customers to utilize</li></ul>
-                <b>Quick VLSI Chip Creation (Personal Project):</b>
-                <ul><li>Created hardware compiler that read a C++ program and physically designed a suitable
+        </div>
+    <h2>PROJECTS</h2>
+        <div class="section">
+            <b>Got It (Sports App):</b> Software Systems Capstone Project at Lewis University</ul>
+            <ul><li>Developed a mobile application with database for inventorying items; used NFC tags to label each
+                    item, implemented RFID capability, and built a user-friendly GUI for customers to utilize</li></ul>
+            <b>Quick VLSI Chip Creation (Personal Project):</b>
+            <ul><li>Created hardware compiler that read a C++ program and physically designed a suitable
                     microprocessor intended to run that specific program. Demonstrated how one person could design a
                     large-scale microprocessor in only three weeks</li></ul>
-            </div>
-            <h2>INTERNSHIP</h2>
-            <div class="section">
-                <table class="edu">
-                    <td><b>Help DeskIntern (260 Hours)</b></td>                       
-                    <td></td>
-                    <td>Summer 20XX</td>
-                    <tr><td>Well-Life Pharmaceuticals, Dallas, TX</td></tr>
-                </table>
-                <table class="edu">
+        </div>
+    <h2>INTERNSHIP</h2>
+        <div class="section">
+            <table class="edu">
+                <td><b>Help DeskIntern (260 Hours)</b></td>                       
+                <td></td>
+                <td>Summer 20XX</td>
+                <tr><td>Well-Life Pharmaceuticals, Dallas, TX</td></tr>
+            </table>
+            <table class="edu">
+                <td>
+                    <li>Troubleshot, isolated, and resolved problems with Windows in a bound and unbound network</li>
+                    <li>Troubleshot, isolated, and resolved problems with Windows in a bound and unbound network</li>
+                    <li>Solved a variety of user issues such as account set-up and password problems</li>
+                    <li>Configured PCs; attached peripherals and installed software</li>
+                    <li>Reported problems with local area network and wide area network systems and equipment</li>
+                    <li>Used locally developed ticket tracking software to record problem/resolution status</li>
+                </td>               
+            </table>
+        </div>
+    <h2>RESEARCH AND PRESENTATIONS</h2>
+        <div class="section">
+            <table class="edu">
+                <td><b>Lewis University Faculty-Supervised Research Projects:</b></td>
+                <tr>
                     <td>
-                        <li>Troubleshot, isolated, and resolved problems with Windows in a bound and unbound network</li>
-                        <li>Troubleshot, isolated, and resolved problems with Windows in a bound and unbound network</li>
-                        <li>Solved a variety of user issues such as account set-up and password problems</li>
-                        <li>Configured PCs; attached peripherals and installed software</li>
-                        <li>Reported problems with local area network and wide area network systems and equipment</li>
-                        <li>Used locally developed ticket tracking software to record problem/resolution status</li>
-                    </td>               
-                </table>
-            </div>
-            <h2>RESEARCH AND PRESENTATIONS</h2>
-            <div class="section">
-                <table class="edu">
-                    <td><b>Lewis University Faculty-Supervised Research Projects:</b></td>
-                    <tr><td>
                         <li>Model of Facial Parameter Extraction and Animation (Advisor: Dr. Persi Diaconis)</li>
                         <li>Highly Efficient Kerberos Style Authentication and Authorization for Cloud Computing (Advisor:
                             Dr. Susan Sims)</li>
-                    </td></tr>
-                    <tr>
-                        <td><b>Presentations:</b></td>
-                    </tr>
-                    <tr>
-                        <td><li>Ugtech, R.Q. (20XX, April). Model of Facial Parameter Extraction and Animation. Poster session
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Presentations:</b></td>
+                </tr>
+                <tr>
+                    <td><li>Ugtech, R.Q. (20XX, April). Model of Facial Parameter Extraction and Animation. Poster session
                             presented at the annual Lewis University Celebration of Scholarship, Romeoville, IL</li></td>
-                    </tr>
-                </table>
-            </div>
-            <h2>EXPERIENCE</h2>
-            <div class="section">
-                <table>
-                    <td><b>IS Help Desk Assistant Manager</b></td>
-                    <td></td>
-                    <td>August 20XX-Present</td>
-                    <tr>
-                        <td>Veritas National Bank System, Chicago, IL</td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <ul>
-                        <li>Resolve all level 1 through 3 support incidents and escalate when needed</li>
-                        <li>Provide professional service to internal and external customers including effective management and
-                            response to incoming telephone calls, electronic mail, voice mail, and electronic support tickets</li>
-                        <li>Monitor workflow, ensure deadlines are met and daily procedures are completed successfully; make
-                            recommendations to increase production and improve efficiency</li>
-                        </ul>
-                        </td>
-                    </tr>
-                </table>
-                <table>
-                    <td><b>Server</b></td>
-                    <td></td>
-                    <td>Summers: 20XX-20XX</td>
-                    <tr>
-                        <td>Black Olive Delight, Tinley Park, IL</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                            <li>Trained new servers in proper sanitation techniques, upselling, and customer service</li>
-                            <li>Welcomed guests and took orders; served at large corporate dinners (150+ guests)</li>
-                            <li>Processed 15 – 20 cash and credit card transactions daily</li>
-                            <li>Resolved customer complaints to ensure satisfaction and generate repeat customers</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-                <table>
-                    <td><b>Student Worker</b></td>
-                    <td>August 20XX-May 20XX</td>
-                    <tr>
-                        <td>Business Office, Lewis University, Romeoville, IL</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Answered phones and directed callers (approximately 20 – 25 callers per day)</li>
-                                <li>Filed confidential financial documents</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <h2>HONORS AND AWARDS</h2>
-            <div class="section">
-                <li>Dean's List, Lewis University, Five semesters</li>
-                <li>Recipient, Christian Brothers Scholarship for academic achievement, 20XX – Present</li>
-                <li>Recipient, Rising Sales Award, Black Olive Delight, April 20XX</li>
-            </div>
-            <h2>LEADERSHIP, ACTIVITIES, AND VOLUNTEER EXPERIENCE</h2>
-            <div class="section">
-                <li>Member, XYZ Social/Service Fraternity, 20XX – Present<br>
-                    <span style="font-style:italic; margin-left: 40px">Public Relations Officer, 20XX – 20XX</span><br>
-                    <span style="font-style:italic; margin-left: 40px">Treasurer, 20XX – 20XX</span></li>
-                <li>Member, Lewis University Men’s Volleyball Team, 20XX – Present</li>
-                <li>Volunteer Mentor, Big Brothers Big Sisters of Will County, 20XX – 20XX</li>
-                <li>Volunteer Tutor, Chicago Tech-Kids Project, May 20XX – Present</li>
+                </tr>
+            </table>
+        </div>
+    <h2>EXPERIENCE</h2>
+        <div class="section">
+            <table>
+                <td><b>IS Help Desk Assistant Manager</b></td>
+                <td></td>
+                <td>August 20XX-Present</td>
+            <tr>
+                <td>Veritas National Bank System, Chicago, IL</td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                    <li>Resolve all level 1 through 3 support incidents and escalate when needed</li>
+                    <li>Provide professional service to internal and external customers including effective management and
+                        response to incoming telephone calls, electronic mail, voice mail, and electronic support tickets</li>
+                    <li>Monitor workflow, ensure deadlines are met and daily procedures are completed successfully; make
+                        recommendations to increase production and improve efficiency</li>
+                    </ul>
+                </td>
+            </tr>
+            </table>
+            <table>
+                <td><b>Server</b></td>
+                <td></td>
+                <td>Summers: 20XX-20XX</td>
+            <tr>
+                <td>Black Olive Delight, Tinley Park, IL</td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Trained new servers in proper sanitation techniques, upselling, and customer service</li>
+                        <li>Welcomed guests and took orders; served at large corporate dinners (150+ guests)</li>
+                        <li>Processed 15 – 20 cash and credit card transactions daily</li>
+                        <li>Resolved customer complaints to ensure satisfaction and generate repeat customers</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <td><b>Student Worker</b></td>
+            <td>August 20XX-May 20XX</td>
+        <tr>
+            <td>Business Office, Lewis University, Romeoville, IL</td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Answered phones and directed callers (approximately 20 – 25 callers per day)</li>
+                    <li>Filed confidential financial documents</li>
                 </ul>
-            </div>
-            <h2>LANGUAGE SKILLS</h2>
-            <div class="section">
-                <li>Fluent in Spanish</li>
-                <li>Semi-fluent in Italian</li>
-            </div>
-        </body>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <h2>HONORS AND AWARDS</h2>
+    <div class="section">
+        <li>Dean's List, Lewis University, Five semesters</li>
+        <li>Recipient, Christian Brothers Scholarship for academic achievement, 20XX – Present</li>
+        <li>Recipient, Rising Sales Award, Black Olive Delight, April 20XX</li>
+    </div>
+    <h2>LEADERSHIP, ACTIVITIES, AND VOLUNTEER EXPERIENCE</h2>
+        <div class="section">
+            <li>Member, XYZ Social/Service Fraternity, 20XX – Present<br>
+                <span style="font-style:italic; margin-left: 40px">Public Relations Officer, 20XX – 20XX</span><br>
+                <span style="font-style:italic; margin-left: 40px">Treasurer, 20XX – 20XX</span></li>
+            <li>Member, Lewis University Men’s Volleyball Team, 20XX – Present</li>
+            <li>Volunteer Mentor, Big Brothers Big Sisters of Will County, 20XX – 20XX</li>
+            <li>Volunteer Tutor, Chicago Tech-Kids Project, May 20XX – Present</li>
+        </ul>
+        </div>
+    <h2>LANGUAGE SKILLS</h2>
+        <div class="section">
+            <li>Fluent in Spanish</li>
+            <li>Semi-fluent in Italian</li>
+        </div>
+    </body>
 </html>
-    

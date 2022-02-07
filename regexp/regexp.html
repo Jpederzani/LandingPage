@@ -1,82 +1,114 @@
 <!doctype html>
 <html lang="en">
 <!--
-    Author: Omar Chavez (used with permission to work on my version)
-    Team:   The Scrumables
-    Class: Software Engineer
-    Description: Site where person writes two words and sees if it contains, and does other things too. Lab 2.
+    Author:         Omar Chavez with edits by Jonathan Pederzani
+    Team:           The Scrumables
+    Class:          Software Engineer
+    Description:    Site where person writes two words and sees if it contains, and does other things too. Lab 2.
 -->
+
 <head>
     <meta charset="UTF-8">
-	<title>Hello World</title>
+	<title>Regular Expression Tester</title>
     <style>
-    *   {
-        box-sizing: border-box;
-    }
-    
-    header{
-        background-color: grey;
-        padding: 20px;
-        text-align: center;
-        font-size: 24px;
-        color: white;
+        *   {
+           
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: grey;
         }
+        
+        header{
+            background-color: grey;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            font-variant: small-caps;
+        }
+        
         nav{
-        float: left;
-        width: 23.58%;
-        background: #ccc;
-        padding:20px;
-        text-align: center;
-        Height: 250px;
+            float: left;
+            width: 23.58%;
+            background: slategray;
+            padding:20px;
+            text-align: center;
+            Height: 250px;
+            border: 1px solid black;
         }
+
         article{
-        float: left;
-        width: 52.55%;
-        background: rgb(74, 104, 91);
-        padding:20px;
-        text-align: center;
-        Height: 250px;
+            float: left;
+            width: 52.55%;
+            background: slategray;
+            padding:20px;
+            border: 1px dotted black;
+            Height: 250px;
         }
+
+        aside{
+            background-color: slategray;
+            border: 1px solid black;
+            text-align: center;
+        }
+        
         footer {
-        background-color: #777;
-        padding: 10px;
-        text-align: center;
-        color: white;
-        height: 400px;
-      }
+            background-color: slategray;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            height: 400px;
+        }
+
+        p{
+            border: 2px solid black;
+            text-align: center;
+
+        }
+
+        .inst{
+            border-left: 2px solid black;
+            text-align: left;
+        }
+
+        h2{
+            font-variant: small-caps;
+            text-align: center;
+            background-color: slategray;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        Regular Expression
-        <br>
-        Test here
+        <h1>Regular Expression Testing</h1>
     </header>
     <nav>
-    <input type="text" id="firstInput" value="First input">
-    <input type="text" id="secondInput" value="Second input">
-    <button onclick="regExpTest()"> Click </button> <!-- this is where the button is, clicks to see-->
-    <br>
+        <input type="text" id="firstInput" value="First input">
+        <br>
+        <input type="text" id="secondInput" value="Second input">
+        <br>
+        <button onclick="regExpTest()"> Test </button> <!-- this is where the button is, clicks to see-->
+        <p class="inst"><fieldset><legend>Instructions:</legend>
+            <ol>
+            <li> Enter two words in the text fields above<br></li>
+            <li> Once both boxes have values, click <q>Test</q><br></li>
+            <li> Under <q>Results:</q> is where the results of your attempt will be<br></li>
+            </ol>
+        </fieldset></p>
     </nav>
     <article>
         <h2>Results:</h2>
         <p id="demo"></p><!-- Where the results will be-->
-    <p id="demo2"></p>
-    <p id="demo3"></p>
-    <p id="demo4"></p>
-    <p id="demo5"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
     </article>
-    <nav style="width: 23.855%">
+    <aside>
+        <p><a href="../index.html">Return Home</a></p>
+    </aside>
 
-    </nav>
-    <footer>
-        <form action="https://white-grass-063a6a210.1.azurestaticapps.net/">
-                <input type="submit" value="Land Page" >
-                </form>
-            </footer>
-
-      <script>
+    <script>
     function regExpTest() {
         var x = document.getElementById("firstInput").value;//whatever the person wrote, word
         var y = document.getElementById("secondInput").value;//the other thing the person wrote, regular expression
@@ -101,4 +133,5 @@
         document.getElementById("demo5").innerHTML = globalRegex.test(str);
         }
     </script>
-... (3 lines left)
+</body>
+</html>
