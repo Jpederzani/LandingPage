@@ -1,41 +1,71 @@
 <!DOCTYPE html>
 <html lang='en'>
+    <!--
+        Author:     Jonathan Pederzani
+        Class:      CPSC-44000 Software Engineering
+        Purpose:    To create a landing page from where all my assignments can be linked and navigated to
+    -->
     <head>
         <meta charset="UTF-8">
         <title>Landing Page: Jon Pederzani</title>   
-        <style>
-            body{
-                background-color: gray;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            h1  {
-                text-align: center;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                font-variant: small-caps;
-            }
-
-            .container{
-            
-            }
-        </style>
+        <link rel="Stylesheet" href="./resources/main.css">
     </head>
-    <body>
-        <h1>Landing Page - Jon Pederzani</h1>
-        <div class="container">
-            <nav>
-                <a href="about.html">About Me </a>
-                <a href="./resume/resume.html">My Resume</a>
-                <a href="./regexp/regexp.html">RegExp App</a>
-                <a href="./hotrox/hotrocks.html">HoTrOx!</a>
-            </nav>
+        <body>
+            <table>
+                <td>
+                    <!--Empty Cell-->
+                </td>
+                <td>                 
+                    <h1>Landing Page - Jon Pederzani</h1>
+                    <h4>Assignments for CPSC44000 - Software Engineering</h4>
+                </td>
+                <tr>
+                <td>
+                    <div class="container">
+                        <table class="nav">
+                            <th class="navpane">Site Navigation</th>
+                            <tr>                            
+                                <td><a href="about.html">About Me </a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="./resume/resume.html">My Resume</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="./regexp/regexp.html">RegExp App</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="./hotrox/hotrocks.html">HoTrOx!</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
 
-        </div>
-<p>Assignments to date:<br>
-    <div>
-    <a href="about.html">About Me Page</a><br>
-    </div>   
-</p>
-</body>
+                <td>
+                    <div class="current">
+                        <h2>Update:</h2>
+                        02/07/22 @ 2:45AM
+                        <pre>
+                            I've finished buffing out a few scratches and have it looking sleek enough for my liking.  Of course I'll be updating it throughout
+                            semeseter, but for right now, it doesn't look too bad for coming out of 1998...
+                        </pre>
+                    </div>
+                </td>
+                <tr>
+                    <td>
+                    <!--Empty Cell-->
+                    </td>
+
+                    <td>
+                        <div class="current";>
+                            <h2>Current Happenings:</h2> <span style="font-size: medium;">  02/07/22 @ 2AM</span>
+                            <pre>
+                                Currently I'm working on getting all this stuff put together, working, and looking nicely.  However things don't always go as 
+                                planned, so here I am at 2:00AM, working on stuff that should have been finished long ago.
+                            </pre>    
+                        </div>    
+                    </td>
+                </tr>
+            </tr>
+        </table>
+    </body>
 </html>
